@@ -1,0 +1,96 @@
+.footer {
+    background: #807DF0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-gap: 40px;
+}
+
+.footer-items {
+    display: flex;
+    grid-gap: 60px 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.nav-footer {
+    background: #F8F8F8;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.nav-footer-grid {
+    display: flex;
+    text-align: center;
+    grid-gap: 20px 80px ;
+    justify-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.nav-footer-grid a{
+    font-size: 0.9rem;
+    transition: .2s;
+}
+
+.nav-footer-grid a:hover{
+    color: #807DF0;
+}
+
+.nav-footer-grid a:hover img{
+    animation: slow-movement 2s linear infinite;
+}
+
+@keyframes slow-movement {
+    /* O ícone começa na posição original */
+    0% {
+      transform: scale(1);
+    }
+    /* Depois de 50% do tempo de animação, o ícone é movido para a direita e para baixo */
+    50% {
+        transform: scale(1.1);
+    }
+    /* No final da animação, o ícone volta para a posição original */
+    100% {
+        transform: scale(1);
+    }
+  }
+
+
+.nav-footer-grid img {
+    margin: 0 auto 10px auto;
+}
+
+.copy {
+    text-align: center;
+    background: #000000;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.copy a {
+    display: inline-block;
+    color: #807DF0;
+    text-decoration: underline;
+    transition: .3S;
+}
+
+.copy a:hover {
+    color: #9594E1;
+}
+
+@media only screen and (max-width: 400px) {
+    .footer-items {
+        grid-gap: 40px ;
+    }
+    
+}

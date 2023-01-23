@@ -1,0 +1,64 @@
+.esteira-bg {
+    width: 1000px;
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+.esteira{
+    overflow-x: hidden; /* esconde os itens que ultrapassarem a largura da esteira */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    gap: 40px;
+    animation: animaçãoDiv 32s linear 0s infinite normal none running ;
+    animation-timing-function: 16s;
+  }
+
+  .esteira2{
+    overflow-x: hidden; /* esconde os itens que ultrapassarem a largura da esteira */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    gap: 40px;
+    animation: animaçãoDiv 32s linear 0s infinite normal none running ;
+    animation-delay: 16s;
+    transform: translateX(-75vw);
+  }
+
+
+  .esteira-bg::after, .esteira-bg::before {
+    content: "";
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+  }
+  
+  .esteira-bg::after {
+    right: 00px;
+    background: linear-gradient(to right, rgba(255 ,255 ,255 ,0) ,white) ;
+    }
+    
+  .esteira-bg::before {
+    left: 00px;
+    background: linear-gradient(to left, rgba(255 ,255 ,255 ,0), white);
+    }
+  
+  
+  .item {
+    overflow-x: hidden; /* esconde os itens que ultrapassarem a largura da esteira */
+    width: 200px; /* largura de cada item */
+    height: max-content; /* altura de cada item */
+  }
+
+  @keyframes animaçãoDiv {
+    0% {
+      transform: translateX(-75vw);
+    }
+    100% {
+      transform: translateX(75vw);
+    }
+  }

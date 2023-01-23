@@ -1,0 +1,42 @@
+.certificate {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.certificate h3{
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.certificate h3:after{
+    background: #9594E1;
+    width: 60px;
+    height: 6px;
+    content: "";
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certificate p{
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.certificate-grid {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 50px;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+    .certificate-grid {
+        grid-gap: 10px;
+    }
+}

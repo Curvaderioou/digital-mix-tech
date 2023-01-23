@@ -1,0 +1,185 @@
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.atual {
+  color:#A8A7FF;
+  opacity: .7;
+}
+
+/* 
+font-family: 'Audiowide', sans-serif; 
+font-family: 'IBM Plex Mono', monospace;
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Audiowide', sans-serif; 
+}
+
+p, a  {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+input {
+    border-radius: 10px;
+    background: #F8F8F8;
+    font-size: 0.9rem;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 2.5px 5px;
+    text-indent: 5px;
+    min-height: 38px;
+}
+
+label {
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+button, .btn {
+    cursor: pointer;
+    background: #8785FF;
+    width: 100%;
+    border-radius: 10px;
+    color: #F8F8F8;
+    padding: 5px 20px;
+    border: 1px solid #A8A7FF;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.125rem;
+    font-family: 'IBM Plex Mono', monospace;
+    transition: .3s;
+}
+
+button:hover, .btn:hover {
+    box-shadow: 5px 5px 50px rgba(128, 125, 240, 0.2);
+    transform: scale(1.025);
+}
+
+.btn::after {
+    content: url(/img/arrow.svg);
+    margin-left: 20px;
+}
+
+.btn-underline {
+    color: #9594E1;
+    font-size: 1.125rem;
+    transition: .3s;
+    letter-spacing: -0.25px;
+    text-transform: uppercase;
+}
+
+.btn-underline:hover {
+    color: #A8A7FF;
+}
+
+h1 {
+    font-size: 2.75rem;
+    line-height: 1.3em;
+    min-height: 60px;
+}   
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.25em;
+}
+
+h3 {
+    font-size: 1.65rem;
+    line-height: 1.25em;
+    text-transform: uppercase;
+}
+
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.25em;
+}
+
+input::placeholder {
+    font-style: italic;
+    font-size: 0.8rem;
+    letter-spacing: -0.5px;
+}
+
+
+.whats-fixed {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    animation: move 3s infinite;
+    z-index: 9999999;
+  }
+
+.whats-fixed img {
+    max-width: 80px;
+  }
+  
+  @keyframes move {
+    25%{
+      transform: translateX(10px);
+    }
+    50%{
+      transform: translateX(0px);
+  
+    }
+    75%{
+      transform: translateX(-10px);
+  
+    }
+    100%{
+      transform: translateX(0px);
+  
+    }
+  }
+
+  .purple {
+    color: #8785FF;
+  }
+
+  
+  .strong {
+    font-style: italic;
+    color: #8785FF;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  @media only screen and (min-width: 325px) and (max-width: 500px) {
+    .whats-fixed img {
+        max-width: 60px;
+      }
+  }
+
+  @media only screen and (max-width: 324px) {
+    .whats-fixed img {
+        max-width: 60px;
+      }
+
+      h1 {
+    font-size: 2.25rem;
+        }
+        
+        button, .btn {
+            font-size: 1rem;
+        }
+  }
+
