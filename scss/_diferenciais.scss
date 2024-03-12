@@ -1,0 +1,81 @@
+.diferenciais {
+    padding: 70px 10px;
+    background: url(/img/main-bg.webp) no-repeat center center;
+    background-size: cover;
+}
+.diferenciais-grid {
+    display: grid;
+    gap: 25px;
+}
+.diferenciais-title {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    text-align: center;
+}
+.diferenciais-title h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2em;
+}
+.diferenciais-title p {
+    font-family: IBM Plex Mono;
+    font-size: 0.9375rem;
+    color: var(--light2);
+}
+.diferenciais-content {
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+}
+.diff-buttons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: fit-content;
+}
+.diff-buttons button {
+    font-family: IBM Plex Mono;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0;
+    color: var(--light2);
+}
+.diff-buttons button.btnativo {
+    color: var(--main);
+}
+#btnEffect {
+    display: block;
+    background: linear-gradient(270deg, #C5C3FF 0.27%, #A3A0F8 48.3%, #4441C8 97.7%);
+    height: 3px;
+    width: 156px;
+    position: absolute;
+    left: 0;
+    border-radius: 4px;
+    bottom: -2px;
+    transition: .3s;
+}
+#btnEffect.crmAtivo {
+    /* margin-left: 187px; */
+    transform: translate(186px);
+    width: 36px;
+}
+
+.diff-video video {
+    border-radius: 10px;
+    border: 2px solid #4441C8;
+}
+
+.diff-video video:not(.videoativo) {
+    display: none;
+}
+
+@media only screen and (max-width: 300px) {
+    .diferenciais-title h3 {
+        font-weight: 700;
+        font-size: 2.125rem;
+        line-height: 1.2em;
+    }
+}

@@ -1,0 +1,347 @@
+.sobre {
+    padding: 80px 0px;
+    background: url(/img/bg-sobre.webp) no-repeat center center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 610px) {
+    .sobre .texto {
+        font-size: 3rem;
+        padding: 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 399px) {
+    .sobre .texto {
+        font-size: 2rem;
+        padding: 0px 10px;
+    }
+}
+
+.guarda-loading {
+    background-color: var(--dark);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20000;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.custom-loader {
+    width: 80px;
+    height: 40px;
+    --c: radial-gradient(farthest-side, #766DF4 93%, #0000);
+    background:
+        var(--c) 0 0,
+        var(--c) 50% 0;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    position: relative;
+    clip-path: inset(-200% -100% 0 0);
+    animation: db6-0 1.5s linear infinite;
+}
+
+.custom-loader:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    background: #766DF4;
+    left: -32px;
+    top: 0;
+    animation:
+        db6-1 1.5s linear infinite,
+        db6-2 0.5s cubic-bezier(0, 200, .8, 200) infinite;
+}
+
+.custom-loader:after {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #766DF4;
+    animation: db6-3 1.5s linear infinite;
+}
+
+@keyframes db6-0 {
+
+    0%,
+    30% {
+        background-position: 0 0, 50% 0
+    }
+
+    33% {
+        background-position: 0 100%, 50% 0
+    }
+
+    41%,
+    63% {
+        background-position: 0 0, 50% 0
+    }
+
+    66% {
+        background-position: 0 0, 50% 100%
+    }
+
+    74%,
+    100% {
+        background-position: 0 0, 50% 0
+    }
+}
+
+@keyframes db6-1 {
+    90% {
+        transform: translateY(0)
+    }
+
+    95% {
+        transform: translateY(30px)
+    }
+
+    100% {
+        transform: translateY(30px);
+        left: calc(100% - 16px)
+    }
+}
+
+@keyframes db6-2 {
+    100% {
+        top: -0.2px
+    }
+}
+
+@keyframes db6-3 {
+
+    0%,
+    80%,
+    100% {
+        transform: translate(0)
+    }
+
+    90% {
+        transform: translate(52px)
+    }
+}
+
+.produtos {
+    padding: 80px 0px;
+    padding-bottom: 0px;
+}
+
+.slide-grid .texto {
+    text-align: center;
+}
+
+.slide-title {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    color: #F2F2F280;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.slide-wrapper {
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+}
+
+.slide:hover {
+    will-change: transform;
+}
+
+.slide>li {
+    flex-shrink: 0;
+    width: 90vw;
+    max-width: fit-content;
+    margin: 0 20px;
+    border-radius: 4px;
+    transform: scale(0.8);
+    margin-top: 20px;
+    transition: 0.4s;
+    display: grid;
+    justify-items: center;
+}
+
+.slide li.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+[data-control="slide"] li a {
+    display: block;
+}
+
+.arrow-nav {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 2rem;
+}
+
+.next {
+    position: absolute;
+    right: 100px;
+}
+
+.prev {
+    position: absolute;
+    left: 100px;
+}
+
+.next,
+.prev {
+    transform: translateY(-50%) scale(0.8);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.next:hover,
+.prev:hover {
+    transform: translateY(-50%) scale(1);
+}
+
+.slide-grid {
+    position: relative;
+}
+
+.custom-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.custom-controls li {
+    height: 15px;
+    width: 15px;
+    border: 1px solid var(--main-cor);
+    transition: 0.3s;
+    cursor: pointer;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+
+.custom-controls li.active {
+    background-color: var(--main-cor);
+}
+
+.slide-paragraph {
+    border-radius: 10px;
+    text-align: center;
+    max-width: fit-content;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.slide-paragraph video {
+    max-width: 312px;
+    width: 100%;
+    border: 2px solid var(--main);
+    border-radius: 10px;
+}
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr .6fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.sobre-grid .texto {
+    position: relative;
+    top: 30px;
+}
+
+.sobre-content {
+    display: grid;
+    text-align: end;
+    justify-items: end;
+    gap: 15px;
+    max-width: 330px;
+    font-size: 1.5625rem;
+    font-style: italic;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 950px) {
+
+    .sobre-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sobre-content {
+        display: grid;
+        text-align: center;
+        justify-items: center;
+        gap: 15px;
+        max-width: 380px;
+        font-size: 1.5625rem;
+    }
+
+}
+
+@media only screen and (min-width: 305px) and (max-width: 479px) {
+
+    .sobre-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sobre-content {
+        display: grid;
+        text-align: center;
+        justify-items: center;
+        gap: 15px;
+        max-width: 380px;
+        font-size: 1.2rem;
+    }
+
+    .sobre-grid .texto {
+        position: relative;
+        top: 15px;
+        font-size: 3rem;
+    }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 304px) {
+
+    .sobre-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sobre-content {
+        display: grid;
+        text-align: center;
+        justify-items: center;
+        gap: 15px;
+        max-width: 380px;
+        font-size: 1.2rem;
+    }
+
+    .sobre-grid .texto {
+        position: relative;
+        top: 15px;
+        font-size: 2.5rem;
+    }
+
+}
