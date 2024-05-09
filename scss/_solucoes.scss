@@ -1,0 +1,363 @@
+.solucoes {
+    padding: 100px 10px;
+    background: url(/img/solucoes-bg.webp) no-repeat center center;
+    background-size: cover;
+}
+
+.traf-bg {
+    background: url(/img/solucoes-bg.webp) no-repeat top center;
+    background-size: cover;
+}
+
+.solucoes-logo {
+    background: url(/img/solucoes-bg-logo.webp) no-repeat top center;
+    background-size: cover;
+}
+
+.solucoes-title {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 250px;
+    gap: 10px;
+}
+
+.traf-bg .solucoes-title {
+    margin-bottom: 100px;
+}
+
+.solucoes-title h4 {
+    color: #C5C3FF;
+    font-family: Audiowide;
+    font-size: 1.875rem;
+}
+
+.solucoes-title p {
+    font-size: 1.25rem;
+    color: var(--light2);
+}
+
+.solucoes-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 100px 20px;
+}
+
+.solucao-item {
+    display: grid;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.70);
+    padding: 40px;
+    max-width: 512px;
+    border-radius: 10px;
+    position: relative;
+    min-height: 424px;
+    align-items: center;
+}
+
+.traf {
+    max-width: 550px;
+}
+
+.solucao-item h2 {
+    background-color: var(--dark);
+    color: var(--light2);
+    font-family: Audiowide;
+    max-width: fit-content;
+    font-size: 1.75rem;
+    position: absolute;
+    top: -20px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    left: 40px;
+}
+
+.solucao-item p {
+    color: var(--light2);
+    font-size: 1.125rem;
+}
+
+.solucao-item ul {
+    display: grid;
+    gap: 10px;
+}
+
+.solucao-item ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--light);
+    font-family: Audiowide;
+    font-size: 1.25rem;
+}
+
+.guarda-solucao {
+    position: relative;
+    z-index: 1;
+    max-width: fit-content;
+    min-height: 424px;
+    border-radius: 10px;
+    padding: 1px;
+    box-shadow: 0px 0px 0px 1px transparent inset;
+    transition: .3s;
+    background: linear-gradient(230deg, #535297 0%, rgba(65, 64, 113, 0.00) 13.66%, rgba(65, 64, 113, 0.00) 32.32%, rgba(65, 64, 113, 0.00) 48.55%, rgba(65, 64, 113, 0.00) 65.31%, rgba(65, 64, 113, 0.00) 85.08%, #56559D 99.96%);
+}
+
+.guarda-solucao:hover {
+    filter: drop-shadow(0px 0px 100px #817df057);
+    box-shadow: 0px 0px 12px 1px var(--main) inset;
+}
+
+.guarda-solucao:not(:hover) {
+    z-index: 4;
+}
+
+.solucao-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 15px;
+    border-radius: 10px;
+    background-color: #C5C3FF33;
+    max-width: fit-content;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.solucao-btn:hover {
+    color: var(--sec);
+}
+
+.outra-solucao {
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+    font-family: IBM Plex Mono;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.outra-solucao p {
+    color: var(--light2);
+    font-size: 1.125rem;
+}
+
+.outra-solucao a {
+    color: #C5C3FF;
+    font-size: .93rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.outra-solucao a:hover {
+    color: var(--main);
+}
+
+.solucao-trafego {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px 15px;
+}
+
+.um-trafego {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+}
+
+.um-trafego p {
+    font-size: 0.9375rem;
+    line-height: 1.3em;
+    color: var(--light2);
+}
+
+.um-trafego h3 {
+    font-family: Audiowide;
+    font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1050px) {
+
+    .solucoes-content {
+        grid-template-columns: 1fr;
+        gap: 70px 20px;
+    }
+
+}
+
+@media only screen and (min-width: 460px) and (max-width: 599px) {
+
+    .solucoes-content {
+        grid-template-columns: 1fr;
+        gap: 70px 20px;
+    }
+
+    .solucoes-title {
+        margin-bottom: 150px;
+    }
+
+    .solucao-item ul li {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 420px) and (max-width: 459px) {
+
+    .solucoes-content {
+        grid-template-columns: 1fr;
+        gap: 70px 20px;
+    }
+
+    .solucoes-title {
+        margin-bottom: 150px;
+    }
+
+    .solucao-item ul li {
+        font-size: 1rem;
+    }
+
+    .solucoes-title p {
+        font-size: 1rem;
+    }
+
+    .solucoes-title h3 {
+        font-size: 3.5rem;
+    }
+
+    .solucoes-title h4 {
+        font-size: 1.4rem;
+    }
+
+    .outra-solucao p {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 340px) and (max-width: 419px) {
+
+    .solucoes-content {
+        grid-template-columns: 1fr;
+        gap: 70px 20px;
+    }
+
+    .solucoes-title {
+        margin-bottom: 150px;
+    }
+
+    .solucao-item ul li {
+        font-size: 1rem;
+    }
+
+    .solucoes-title p {
+        font-size: 1rem;
+    }
+
+    .texto {
+        font-size: 3.5rem;
+    }
+
+    .solucoes-title h4 {
+        font-size: 1.4rem;
+    }
+
+    .outra-solucao p {
+        font-size: 1rem;
+    }
+
+    .solucao-item h2 {
+        font-size: 1.4rem;
+        left: 20px;
+    }
+
+    .solucao-item {
+        padding: 40px 20px;
+        min-height: none !important;
+    }
+
+    .solucao-item p {
+        color: var(--light2);
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 339px) {
+
+    .solucoes-content {
+        grid-template-columns: 1fr;
+        gap: 70px 20px;
+    }
+
+    .solucoes-title {
+        margin-bottom: 150px;
+    }
+
+    .solucao-item ul li {
+        font-size: .9rem;
+    }
+
+    .solucoes-title p {
+        font-size: 1rem;
+    }
+
+    .texto {
+        font-size: 3.1rem;
+    }
+
+    .solucoes-title h4 {
+        font-size: 1.4rem;
+    }
+
+    .outra-solucao p {
+        font-size: 1rem;
+    }
+
+    .solucao-item h2 {
+        font-size: 1.2rem;
+        left: 0px;
+    }
+
+    .solucao-item {
+        padding: 40px 20px;
+        min-height: none !important;
+    }
+
+    .solucao-item p {
+        color: var(--light2);
+        font-size: 1rem;
+    }
+
+    .solucao-btn {
+        padding: 10px 8px;
+        gap: 7px;
+        font-size: 1rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 310px) and (max-width: 590px) {
+    .solucao-trafego {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 309px) {
+    .solucao-trafego {
+        grid-template-columns: 1fr;
+    }
+
+    .um-trafego h3 {
+        font-family: Audiowide;
+        font-size: 1.1rem;
+    }
+}

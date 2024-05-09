@@ -1,0 +1,122 @@
+.mktlocal {
+    padding: 70px 10px;
+    background: url(/img/faq-bg.webp) no-repeat center center;
+    background-size: cover;
+}
+
+.mktlocal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.formulario-content .btn {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.numbers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+    gap: 15px 40px;
+}
+
+.numbers-grid>span {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--main);
+}
+
+.some {
+    display: none !important;
+}
+
+.numbers-item {
+    display: grid;
+    max-width: 244px;
+    justify-items: center;
+}
+
+.numbers-item p {
+    font-size: 0.9375rem;
+    font-style: italic;
+    text-align: center;
+    color: var(--light2);
+}
+
+.number-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.number,
+.number-group>div,
+.number-group h5 {
+    color: var(--sec);
+    font-family: IBM Plex Mono;
+    font-weight: 700;
+    font-size: 1.625rem;
+}
+
+.number-group h5 {
+    font-weight: 400;
+    color: var(--light);
+}
+
+.number-group h6 {
+    font-family: Audiowide;
+    font-size: 3.125rem;
+    background: linear-gradient(313deg, #FFF 19.86%, rgba(255, 255, 255, 0.20) 79.76%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 1070px) {
+
+    .mktlocal-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+
+    .numbers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .numbers-grid>span:not(.some) {
+        display: none !important;
+    }
+
+    .some {
+        display: block !important;
+    }
+
+}
+
+@media only screen and (min-width: 311px) and (max-width: 440px) {
+    .formulario-content .btn {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding: 14px 12px;
+        font-size: 1rem;
+        background-position: -340px;
+    }
+}
+@media only screen and (max-width: 310px) {
+    .formulario-content .btn {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding: 14px 8px;
+        font-size: .9rem;
+        background-position: -340px;
+    }
+}

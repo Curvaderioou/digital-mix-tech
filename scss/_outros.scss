@@ -1,0 +1,71 @@
+.politica p {
+  margin-top: 10px;
+}
+.politica h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.politica ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.politica ul li {
+  text-indent: 50px;
+}
+.politica h2 {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.politica {
+  padding: 10px 10px;
+}
+.termos {
+  padding: 10px 10px;
+}
+.termos p {
+  margin-top: 10px;
+}
+.termos h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.termos ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.termos ul li {
+  text-indent: 50px;
+}
+.termos h2 {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.base-footer {
+  padding: 40px 0px;
+  border-top: 1px solid #EDEAEE;
+  background-color: var(--dark);
+}
+.base-footer-grid {
+  padding: 0px 10px;
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  gap: 10px;
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--light2);
+}
+.base-footer-grid > span {
+  display: block;
+  background-color: var(--main);
+  height: 1px;
+  width: 90px;
+}
+.base-footer-grid div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}

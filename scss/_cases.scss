@@ -1,149 +1,232 @@
 .cases {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 100px 10px;
+    background: url(/img/cases-bg.webp) repeat center center;
+    background-size: cover;
+}
+
+.case-item>div:first-child {
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+    border-radius: 11px;
+    filter: grayscale(100%);
+}
+
+.flame {
+    background: url(/img/flame.webp) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.naka {
+    background: url(/img/naka.webp) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.freitas {
+    background: url(/img/freitas.webp) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wf {
+    background: url(/img/wf.webp) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.jaine {
+    background: url(/img/jaine.webp) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.destravar {
+    background: url(/img/destravar.webp) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.conceito {
+    background: url(/img/conceito.webp) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.conceito2 {
+    background: url(/img/conceito2.webp) no-repeat center center;
+    background-size: cover;
+}
+
+.santaluz {
+    background: url(/img/santaluz.webp) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.vizzano {
+    background: url(/img/vizzano.webp) no-repeat right center;
+    background-size: cover;
+}
+
+.jj {
+    background: url(/img/jj.webp) no-repeat center center;
+    background-size: cover;
+}
+
+.jc {
+    background: url(/img/jc.webp) no-repeat left top;
+    background-size: cover;
 }
 
 
-.cases-grid h3 {
-    text-align: center;
-    margin-bottom: 20px;
+.cases-content {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    z-index: 4;
+    gap: 60px;
 }
 
-.cases-grid h3:after {
-    background: #9594E1;
-    width: 60px;
-    height: 5px;
-    content: "";
-    display: block;
-    margin-top: 10px;
+.cases-content>section {
+    width: 100%;
+}
+
+.case-item {
+    max-width: 1130px;
+    width: 100%;
+    height: 510px;
+    border-radius: 10px;
+    border: 1px solid var(--main);
+    position: relative;
+    transition: .3s;
+    text-shadow: 0 0 2px #000;
+}
+
+.cases-grid .btn {
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.cases-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    transition: .3s;
-
-}
-
-.cases-row2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    transition: .3s;
-}
-
-.cases-row3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.cases-row2 div:nth-child(1) a img{
-    border-radius: 50px 0px 0px 0px;
-}
-.cases-row2 div:nth-child(2) a img{
-    border-radius: 0px 50px 0px 0px;
-}
-
-.cases-row3 div:nth-child(1) a img{
-    border-radius: 0px 0px 0px 50px;
-}
-
-.cases-row3 div:nth-child(3) a img{
-    border-radius: 0px 0px 50px 0px;
-}
-
-.cases-row2 div a, .cases-row3 div a {
+.cases-grid .texto {
     position: relative;
-    display: grid;
-    justify-items: center;
+    top: 23px;
 }
 
-.cases-row2 div:nth-child(2) a p {
-    color : #fff;
+.case-item:hover>div:first-child {
+    filter: grayscale(0%);
 }
 
-.cases-row3 div:nth-child(3) a p {
-    color : #fff;
-}
-
-.https {
-    font-style: italic;
-    letter-spacing: -0.5px;
-    text-align: center;
+.case-title {
     position: absolute;
-    bottom: 10px;
-    font-size: 1rem;
-    opacity: .7;
-    display: none;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.cases-row2 div:hover .https, .cases-row3 div:hover .https  {
-    display: inherit;
+.case-title h3 {
+    color: var(--sec);
+    font-weight: 600;
 }
 
-.cases-row2 div:hover, .cases-row3 div:hover {
-    transform: scale(1.015);
-    z-index: 1000000;
-    transition: .3s;
+.case-title h2 {
+    font-size: 4rem;
+    line-height: 1.1em;
+    font-weight: 700;
 }
 
-@media only screen and (min-width: 501px) and (max-width:1200px) {
-    .cases-row2 {
-        grid-template-columns:  1fr;
-    }
-    
-    .cases-row3 {
-        grid-template-columns:   1fr;
-    }
-
-    .https {
-        display: inherit;
-    }
-
-    .cases-row2 div:nth-child(1) a img{
-        border-radius: 50px 50px 0px 0px;
-    }
-    .cases-row2 div:nth-child(2) a img{
-        border-radius: 0px 0px 0px 0px;
-    }
-    
-    .cases-row3 div:nth-child(1) a img{
-        border-radius: 0px 0px 0px 0px;
-    }
-    
-    .cases-row3 div:nth-child(3) a img{
-        border-radius: 0px 0px 50px 50px;
-    }
-    
+.ld {
+    right: -30px;
+    text-align: end;
 }
+
+.le {
+    left: -30px;
+}
+
+@media only screen and (max-width:1220px) {
+
+    .ld {
+        right: 10px;
+        text-align: end;
+    }
+
+    .le {
+        left: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .flame {
+        background: url(/img/flame-mobile.webp) no-repeat center center;
+        background-size: cover;
+        background-attachment: initial;
+    }
+
+    .naka {
+        background: url(/img/naka-mobile.webp) no-repeat center center;
+        background-size: cover;
+        background-attachment: initial;
+    }
+
+    .freitas {
+        background: url(/img/freitas-mobile.webp) no-repeat center center;
+        background-size: cover;
+        background-attachment: initial;
+    }
+
+    .wf {
+        background: url(/img/wf-mobile.webp) no-repeat center center;
+        background-size: cover;
+        background-attachment: initial;
+    }
+
+    .jaine {
+        background: url(/img/jaine-mobile.webp) no-repeat center center;
+        background-size: cover;
+        background-attachment: initial;
+    }
+
+    .destravar {
+        background: url(/img/destravar-mobile.webp) no-repeat center center;
+        background-size: cover;
+        background-attachment: initial;
+    }
+
+    .conceito {
+        background: url(/img/conceito-mobile.webp) no-repeat center center;
+        background-size: cover;
+        background-attachment: initial;
+    }
+
+    .santaluz {
+        background: url(/img/santaluz-mobile.webp) no-repeat center center;
+        background-size: cover;
+        background-attachment: initial;
+    }
+
+}
+
 @media only screen and (max-width: 500px) {
-    .cases-row2 {
-        grid-template-columns:  1fr;
+    .case-item {
+        height: 380px;
     }
-    
-    .cases-row3 {
-        grid-template-columns:   1fr;
-    }
+}
 
-    .https {
-        display: inherit;
-        font-size: 0.8rem;
+@media only screen and (min-width: 400px) and (max-width: 430px) {
+    .case-title h2 {
+        font-size: 3rem;
+        line-height: 1.1em;
+        font-weight: 700;
     }
+}
 
-    .cases-row2 div:nth-child(1) a img{
-        border-radius: 25px 25px 0px 0px;
+@media only screen and (max-width: 400px) {
+    .case-title h2 {
+        font-size: 2.4rem;
+        line-height: 1.1em;
+        font-weight: 700;
     }
-    .cases-row2 div:nth-child(2) a img{
-        border-radius: 0px 0px 0px 0px;
-    }
-    
-    .cases-row3 div:nth-child(1) a img{
-        border-radius: 0px 0px 0px 0px;
-    }
-    
-    .cases-row3 div:nth-child(3) a img{
-        border-radius: 0px 0px 25px 25px;
-    }
-    
 }
